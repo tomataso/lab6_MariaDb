@@ -6,6 +6,7 @@ import org.springframework.stereotype.Service;
 import com.cenfotec.journal.domain.Journal;
 import com.cenfotec.journal.repository.JournalRepository;
 
+@Service
 public class JournalServiceImpl implements JournalService {
 @Autowired
 JournalRepository journalRepo;
