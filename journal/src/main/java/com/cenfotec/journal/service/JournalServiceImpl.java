@@ -8,14 +8,16 @@ import com.cenfotec.journal.repository.JournalRepository;
 
 @Service
 public class JournalServiceImpl implements JournalService {
-@Autowired
-JournalRepository journalRepo;
-@Override
-public void saveJournal(Journal newJournal) {
-journalRepo.save(newJournal);
-}
-@Override
-public List<Journal> getAllJournals() {
-return journalRepo.findAll();
-}
+	@Autowired
+	JournalRepository journalRepo;
+
+	@Override
+	public void saveJournal(Journal newJournal) {
+		journalRepo.save(newJournal);
+	}
+
+	@Override
+	public List<Journal> getAllJournals() {
+		return journalRepo.findAll();
+	}
 }
